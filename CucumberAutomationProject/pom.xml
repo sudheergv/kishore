@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wordpress</groupId>
-	<artifactId>WordPressMay2018</artifactId>
+	<artifactId>CucumberAutomationProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>WordPressMay2018</name>
+	<name>CucumberAutomationProject</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
