@@ -1,0 +1,660 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "open the url and navigate to login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3284783015,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open the browser and load the wordpress",
+            "match": {
+              "location": "LoginStepDefintions.open_the_browser_and_load_the_wordpress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70379609,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login link",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2671619611,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.login_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3711879701,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario_launchChrome()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Test with valid credentials",
+        "description": "",
+        "id": "testing-login-functionality;test-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 144046396,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 398562362,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter user name \"sudheerkumar.gv@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheerkumar.gv@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefintions.enter_user_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88554802,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on continue button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5142775985,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "enter password \"kumar@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kumar@123\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefintions.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47679010,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2115693474,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "dashboard page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.dashboard_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@important"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open the url and navigate to login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3117867169,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open the browser and load the wordpress",
+            "match": {
+              "location": "LoginStepDefintions.open_the_browser_and_load_the_wordpress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 68098325,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login link",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2855417984,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.login_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1926117750,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario_launchChrome()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Test with invalid credentials",
+        "description": "",
+        "id": "testing-login-functionality;test-with-invalid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 114654719,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 200233368,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "enter user name \"invalidxyz\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"invalidxyz\"",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefintions.enter_user_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83871743,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "click on continue button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5028363132,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "userName error message should appear",
+            "match": {
+              "location": "LoginStepDefintions.username_error_message_should_appear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@non-important"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open the url and navigate to login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3006279481,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open the browser and load the wordpress",
+            "match": {
+              "location": "LoginStepDefintions.open_the_browser_and_load_the_wordpress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67505606,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login link",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2724575897,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.login_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2089107129,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario_launchChrome()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "login with invalid data",
+        "description": "",
+        "id": "testing-login-functionality;login-with-invalid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 73232133,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 298048399,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "enter user name \"sudheerkumar.gv@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheerkumar.gv@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefintions.enter_user_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 80676428,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on continue button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5071544112,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "enter password \"ABC\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABC\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefintions.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 54873674,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191605,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Login should be failed",
+            "match": {
+              "location": "LoginStepDefintions.login_should_be_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@non-important"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "open the url and navigate to login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3834187009,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "open the browser and load the wordpress",
+            "match": {
+              "location": "LoginStepDefintions.open_the_browser_and_load_the_wordpress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 56369666,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "click on login link",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2782545817,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.login_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1919879181,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario_launchChrome()"
+            }
+          }
+        ],
+        "line": 35,
+        "name": "login with invalid data",
+        "description": "",
+        "id": "testing-login-functionality;login-with-invalid-data;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 69372468,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 278649095,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "enter user name \"sudheerkumar.gv@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheerkumar.gv@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefintions.enter_user_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 73704023,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "click on continue button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5076117890,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "enter password \"#@$@$\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"#@$@$\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefintions.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67138653,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 206570,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "Login should be failed",
+            "match": {
+              "location": "LoginStepDefintions.login_should_be_failed()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@non-important"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Login Functionality",
+    "description": "",
+    "id": "testing-login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@sanity",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@firefox",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 9
+        }
+      },
+      {
+        "name": "@chrome",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 19
+        }
+      }
+    ]
+  }
+]

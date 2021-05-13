@@ -1,0 +1,318 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14262120414,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario_launchChrome()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Test update the profile details with valid details",
+        "description": "",
+        "id": "testing-profile-functionality;test-update-the-profile-details-with-valid-details",
+        "after": [
+          {
+            "result": {
+              "duration": 274572993,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 24674361735,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "open the browser and load the wordpress",
+            "match": {
+              "location": "LoginStepDefintions.open_the_browser_and_load_the_wordpress()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7678414010,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click on login link",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1720097577,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "login page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.login_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 559400275,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter user name \"sudheerkumar.gv@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheerkumar.gv@gmail.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginStepDefintions.enter_user_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 303768538,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on continue button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_continue_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5160940874,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "enter password \"kumar@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kumar@123\"",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginStepDefintions.enter_password(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 370281575,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on login button",
+            "match": {
+              "location": "LoginStepDefintions.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4042886929,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "dashboard page should be displayed",
+            "match": {
+              "location": "LoginStepDefintions.dashboard_page_should_be_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1428862217,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on profile icon",
+            "match": {
+              "location": "ProfileStepDefintion.click_on_profile_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2322856651,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "profile page should display",
+            "match": {
+              "location": "ProfileStepDefintion.profile_page_should_display()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1197026517,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "enter first name \"sudheer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheer\"",
+                  "offset": 17
+                }
+              ],
+              "location": "ProfileStepDefintion.enter_first_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1342501361,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "enter last name \"kumar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"kumar\"",
+                  "offset": 16
+                }
+              ],
+              "location": "ProfileStepDefintion.enter_last_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 844174545,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "enter display name \"sudheerkumar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sudheerkumar\"",
+                  "offset": 19
+                }
+              ],
+              "location": "ProfileStepDefintion.enter_display_name(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 396260347,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "enter about me \"trainer\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"trainer\"",
+                  "offset": 15
+                }
+              ],
+              "location": "ProfileStepDefintion.enter_about_me(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1017290968,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "click on save profile button",
+            "match": {
+              "location": "ProfileStepDefintion.click_on_save_profile_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1810700408,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "profile page should be successfully saved",
+            "match": {
+              "location": "ProfileStepDefintion.profile_page_should_be_successfully_saved()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          },
+          {
+            "name": "@important"
+          },
+          {
+            "name": "@firefox"
+          },
+          {
+            "name": "@chrome"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Profile Functionality",
+    "description": "",
+    "id": "testing-profile-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Profile.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@firefox",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      },
+      {
+        "name": "@chrome",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 23
+        }
+      }
+    ]
+  }
+]
