@@ -1,10 +1,11 @@
 package com.wordpress.stepdefinitions;
 
-import com.wordpress.stepdefinitions.DriverFactory;
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import cucumber.runtime.RuntimeOptions;
+
 
 public class Hooks extends DriverFactory
 {
