@@ -26,22 +26,23 @@ public class DriverFactory {
 			String platform_version = configProp.getPropertyValue("platform_version");
 			String device_name = configProp.getPropertyValue("device_name");
 			String browser_name = configProp.getPropertyValue("browser_name");
+			DesiredCapabilities caps = new DesiredCapabilities();
 			if (platform_name.equalsIgnoreCase("android")) {
-				DesiredCapabilities caps = new DesiredCapabilities();
 				caps.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
 				caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
 				caps.setCapability(MobileCapabilityType.DEVICE_NAME, device_name);
-				caps.setCapability(MobileCapabilityType.BROWSER_NAME, browser_name); // "chrome"
 				caps.setCapability("avd", "Nexus_4_API_21");
 				driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
 			}else {
-				DesiredCapabilities caps = new DesiredCapabilities();
 				caps.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
 				caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
 				caps.setCapability(MobileCapabilityType.DEVICE_NAME, device_name);
 				File file = new File("/Users/dnreddy/Documents/Appium/iosHybrid.app");
 				caps.setCapability(MobileCapabilityType.APP,file );
 				driver = new IOSDriver(new URL("http://127.0.0.1:4723/wd/hub"), caps);
+			}
+			if(browser_name!=null) {
+				caps.setCapability(MobileCapabilityType.BROWSER_NAME, browser_name); 
 			}
 			driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 
