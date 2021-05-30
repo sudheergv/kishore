@@ -13,7 +13,7 @@ public class DashboardPage {
 	@FindBy(how = How.XPATH, using = "//*[text()='My Profile']")
 	public WebElement profileIcon;
 
-	public DashboardPage(AppiumDriver<WebElement> driver) {
+	public DashboardPage(WebDriver driver) {
 		this.driver = driver;
 	}
 

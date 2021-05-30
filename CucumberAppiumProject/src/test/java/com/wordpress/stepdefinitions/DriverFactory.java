@@ -7,6 +7,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import com.wordpress.utils.ReadProperties;
@@ -17,7 +19,7 @@ import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 
 public class DriverFactory {
-	static AppiumDriver<WebElement> driver;
+	static WebDriver driver;
 	public static ReadProperties configProp = new ReadProperties("./src/test/resources/config/config.properties");
 
 	public void initializeDriver() throws MalformedURLException {
@@ -27,7 +29,17 @@ public class DriverFactory {
 			String device_name = configProp.getPropertyValue("device_name");
 			String browser_name = configProp.getPropertyValue("browser_name");
 			DesiredCapabilities caps = new DesiredCapabilities();
-			if (platform_name.equalsIgnoreCase("android")) {
+			if (platform_name.equalsIgnoreCase("web")) {
+				if (browser_name.equalsIgnoreCase("firefox")) {
+					System.setProperty("webdriver.gecko.driver",
+							"/usr/local/geckodriver_mac");
+					driver = new FirefoxDriver();
+				} else if (browser_name.equalsIgnoreCase("chrome")) {
+					System.setProperty("webdriver.chrome.driver", "/usr/local/chromedriver_mac");
+					driver = new ChromeDriver();
+				}
+			}
+			else if (platform_name.equalsIgnoreCase("android")) {
 				caps.setCapability(MobileCapabilityType.PLATFORM_NAME, platform_name);
 				caps.setCapability(MobileCapabilityType.PLATFORM_VERSION, platform_version);
 				caps.setCapability(MobileCapabilityType.DEVICE_NAME, device_name);

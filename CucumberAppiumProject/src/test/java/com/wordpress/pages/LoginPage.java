@@ -28,7 +28,7 @@ public class LoginPage {
 	@FindBy(how = How.XPATH, using = "//span[text()='User does not exist.']")
 	public WebElement invalidMessage;
 
-	public LoginPage(AppiumDriver<WebElement> driver) {
+	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 	}
 

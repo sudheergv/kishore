@@ -10,7 +10,7 @@ public class HomePage
 {
 	
 	WebDriver driver;
-	public HomePage(AppiumDriver<WebElement> driver)
+	public HomePage(WebDriver driver)
 	{
 		this.driver = driver;
 	}

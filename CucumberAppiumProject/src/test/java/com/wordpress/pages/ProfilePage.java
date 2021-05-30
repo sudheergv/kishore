@@ -33,7 +33,7 @@ public class ProfilePage
 		
 		
 					
-		public ProfilePage(AppiumDriver<WebElement> driver)
+		public ProfilePage(WebDriver driver)
 		{
 			this.driver = driver;
 		}
